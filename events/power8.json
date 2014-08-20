@@ -522,18 +522,6 @@
     "PublicDescription": "CO mach 0 Busy. Used by PMU to sample ave RC livetime(mach0 used as sample point),"
   },
   {
-    "EventCode": "0x517082",
-    "EventName": "PM_CO_DISP_FAIL",
-    "BriefDescription": "CO dispatch failed due to all CO machines being busy,",
-    "PublicDescription": "CO dispatch failed due to all CO machines being busy,"
-  },
-  {
-    "EventCode": "0x527084",
-    "EventName": "PM_CO_TM_SC_FOOTPRINT",
-    "BriefDescription": "L2 did a cleanifdirty CO to the L3 (ie created an SC line in the L3),",
-    "PublicDescription": "L2 did a cleanifdirty CO to the L3 (ie created an SC line in the L3),"
-  },
-  {
     "EventCode": "0x3608a",
     "EventName": "PM_CO_USAGE",
     "BriefDescription": "Continuous 16 cycle(2to1) window where this signals rotates thru sampling each L2 CO machine busy. PMU uses this wave to then do 16 cyc count to sample total number of machs running,",
@@ -2640,34 +2628,10 @@
     "PublicDescription": "A Page Table Entry was loaded into the TLB from another chip's memory on the same Node or Group ( Remote) due to a instruction side request.,"
   },
   {
-    "EventCode": "0x617082",
-    "EventName": "PM_ISIDE_DISP",
-    "BriefDescription": "All i-side dispatch attempts,",
-    "PublicDescription": "All i-side dispatch attempts,"
-  },
-  {
-    "EventCode": "0x627084",
-    "EventName": "PM_ISIDE_DISP_FAIL",
-    "BriefDescription": "All i-side dispatch attempts that failed due to a addr collision with another machine,",
-    "PublicDescription": "All i-side dispatch attempts that failed due to a addr collision with another machine,"
-  },
-  {
-    "EventCode": "0x627086",
-    "EventName": "PM_ISIDE_DISP_FAIL_OTHER",
-    "BriefDescription": "All i-side dispatch attempts that failed due to a reason other than addrs collision,",
-    "PublicDescription": "All i-side dispatch attempts that failed due to a reason other than addrs collision,"
-  },
-  {
     "EventCode": "0x4608e",
     "EventName": "PM_ISIDE_L2MEMACC",
     "BriefDescription": "valid when first beat of data comes in for an i-side fetch where data came from mem(or L4),",
     "PublicDescription": "valid when first beat of data comes in for an i-side fetch where data came from mem(or L4),"
-  },
-  {
-    "EventCode": "0x44608e",
-    "EventName": "PM_ISIDE_MRU_TOUCH",
-    "BriefDescription": "Iside L2 MRU touch,",
-    "PublicDescription": "Iside L2 MRU touch,"
   },
   {
     "EventCode": "0xd096",
@@ -2838,34 +2802,10 @@
     "PublicDescription": "Counts all Icache prefetch reloads ( includes demand turned into prefetch).,"
   },
   {
-    "EventCode": "0x417080",
-    "EventName": "PM_L2_CASTOUT_MOD",
-    "BriefDescription": "L2 Castouts - Modified (M, Mu, Me),",
-    "PublicDescription": "L2 Castouts - Modified (M, Mu, Me),"
-  },
-  {
-    "EventCode": "0x417082",
-    "EventName": "PM_L2_CASTOUT_SHR",
-    "BriefDescription": "L2 Castouts - Shared (T, Te, Si, S),",
-    "PublicDescription": "L2 Castouts - Shared (T, Te, Si, S),"
-  },
-  {
     "EventCode": "0x27084",
     "EventName": "PM_L2_CHIP_PUMP",
     "BriefDescription": "RC requests that were local on chip pump attempts,",
     "PublicDescription": "RC requests that were local on chip pump attempts,"
-  },
-  {
-    "EventCode": "0x427086",
-    "EventName": "PM_L2_DC_INV",
-    "BriefDescription": "Dcache invalidates from L2,",
-    "PublicDescription": "Dcache invalidates from L2,"
-  },
-  {
-    "EventCode": "0x44608c",
-    "EventName": "PM_L2_DISP_ALL_L2MISS",
-    "BriefDescription": "All successful Ld/St dispatches for this thread that were an L2miss.,",
-    "PublicDescription": "All successful Ld/St dispatches for this thread that were an L2miss.,"
   },
   {
     "EventCode": "0x27086",
@@ -2874,142 +2814,10 @@
     "PublicDescription": "RC requests that were on Node Pump attempts,"
   },
   {
-    "EventCode": "0x626084",
-    "EventName": "PM_L2_GRP_GUESS_CORRECT",
-    "BriefDescription": "L2 guess grp and guess was correct (data intra-6chip AND ^on-chip),",
-    "PublicDescription": "L2 guess grp and guess was correct (data intra-6chip AND ^on-chip),"
-  },
-  {
-    "EventCode": "0x626086",
-    "EventName": "PM_L2_GRP_GUESS_WRONG",
-    "BriefDescription": "L2 guess grp and guess was not correct (ie data on-chip OR beyond-6chip),",
-    "PublicDescription": "L2 guess grp and guess was not correct (ie data on-chip OR beyond-6chip),"
-  },
-  {
-    "EventCode": "0x427084",
-    "EventName": "PM_L2_IC_INV",
-    "BriefDescription": "Icache Invalidates from L2,",
-    "PublicDescription": "Icache Invalidates from L2,"
-  },
-  {
-    "EventCode": "0x436088",
-    "EventName": "PM_L2_INST",
-    "BriefDescription": "All successful I-side dispatches for this thread (excludes i_l2mru_tch reqs),",
-    "PublicDescription": "All successful I-side dispatches for this thread (excludes i_l2mru_tch reqs),"
-  },
-  {
-    "EventCode": "0x43608a",
-    "EventName": "PM_L2_INST_MISS",
-    "BriefDescription": "All successful i-side dispatches that were an L2miss for this thread (excludes i_l2mru_tch reqs),",
-    "PublicDescription": "All successful i-side dispatches that were an L2miss for this thread (excludes i_l2mru_tch reqs),"
-  },
-  {
-    "EventCode": "0x416080",
-    "EventName": "PM_L2_LD",
-    "BriefDescription": "All successful D-side Load dispatches for this thread,",
-    "PublicDescription": "All successful D-side Load dispatches for this thread,"
-  },
-  {
-    "EventCode": "0x437088",
-    "EventName": "PM_L2_LD_DISP",
-    "BriefDescription": "All successful load dispatches,",
-    "PublicDescription": "All successful load dispatches,"
-  },
-  {
-    "EventCode": "0x43708a",
-    "EventName": "PM_L2_LD_HIT",
-    "BriefDescription": "All successful load dispatches that were L2 hits,",
-    "PublicDescription": "All successful load dispatches that were L2 hits,"
-  },
-  {
-    "EventCode": "0x426084",
-    "EventName": "PM_L2_LD_MISS",
-    "BriefDescription": "All successful D-Side Load dispatches that were an L2miss for this thread,",
-    "PublicDescription": "All successful D-Side Load dispatches that were an L2miss for this thread,"
-  },
-  {
-    "EventCode": "0x616080",
-    "EventName": "PM_L2_LOC_GUESS_CORRECT",
-    "BriefDescription": "L2 guess loc and guess was correct (ie data local),",
-    "PublicDescription": "L2 guess loc and guess was correct (ie data local),"
-  },
-  {
-    "EventCode": "0x616082",
-    "EventName": "PM_L2_LOC_GUESS_WRONG",
-    "BriefDescription": "L2 guess loc and guess was not correct (ie data not on chip),",
-    "PublicDescription": "L2 guess loc and guess was not correct (ie data not on chip),"
-  },
-  {
-    "EventCode": "0x516080",
-    "EventName": "PM_L2_RCLD_DISP",
-    "BriefDescription": "L2 RC load dispatch attempt,",
-    "PublicDescription": "L2 RC load dispatch attempt,"
-  },
-  {
-    "EventCode": "0x516082",
-    "EventName": "PM_L2_RCLD_DISP_FAIL_ADDR",
-    "BriefDescription": "L2 RC load dispatch attempt failed due to address collision with RC/CO/SN/SQ,",
-    "PublicDescription": "L2 RC load dispatch attempt failed due to address collision with RC/CO/SN/SQ,"
-  },
-  {
-    "EventCode": "0x526084",
-    "EventName": "PM_L2_RCLD_DISP_FAIL_OTHER",
-    "BriefDescription": "L2 RC load dispatch attempt failed due to other reasons,",
-    "PublicDescription": "L2 RC load dispatch attempt failed due to other reasons,"
-  },
-  {
-    "EventCode": "0x536088",
-    "EventName": "PM_L2_RCST_DISP",
-    "BriefDescription": "L2 RC store dispatch attempt,",
-    "PublicDescription": "L2 RC store dispatch attempt,"
-  },
-  {
-    "EventCode": "0x53608a",
-    "EventName": "PM_L2_RCST_DISP_FAIL_ADDR",
-    "BriefDescription": "L2 RC store dispatch attempt failed due to address collision with RC/CO/SN/SQ,",
-    "PublicDescription": "L2 RC store dispatch attempt failed due to address collision with RC/CO/SN/SQ,"
-  },
-  {
-    "EventCode": "0x54608c",
-    "EventName": "PM_L2_RCST_DISP_FAIL_OTHER",
-    "BriefDescription": "L2 RC store dispatch attempt failed due to other reasons,",
-    "PublicDescription": "L2 RC store dispatch attempt failed due to other reasons,"
-  },
-  {
-    "EventCode": "0x537088",
-    "EventName": "PM_L2_RC_ST_DONE",
-    "BriefDescription": "RC did st to line that was Tx or Sx,",
-    "PublicDescription": "RC did st to line that was Tx or Sx,"
-  },
-  {
-    "EventCode": "0x63708a",
-    "EventName": "PM_L2_RTY_LD",
-    "BriefDescription": "RC retries on PB for any load from core,",
-    "PublicDescription": "RC retries on PB for any load from core,"
-  },
-  {
     "EventCode": "0x3708a",
     "EventName": "PM_L2_RTY_ST",
     "BriefDescription": "RC retries on PB for any store from core,",
     "PublicDescription": "RC retries on PB for any store from core,"
-  },
-  {
-    "EventCode": "0x54708c",
-    "EventName": "PM_L2_SN_M_RD_DONE",
-    "BriefDescription": "SNP dispatched for a read and was M,",
-    "PublicDescription": "SNP dispatched for a read and was M,"
-  },
-  {
-    "EventCode": "0x54708e",
-    "EventName": "PM_L2_SN_M_WR_DONE",
-    "BriefDescription": "SNP dispatched for a write and was M,",
-    "PublicDescription": "SNP dispatched for a write and was M,"
-  },
-  {
-    "EventCode": "0x53708a",
-    "EventName": "PM_L2_SN_SX_I_DONE",
-    "BriefDescription": "SNP dispatched and went from Sx or Tx to Ix,",
-    "PublicDescription": "SNP dispatched and went from Sx or Tx to Ix,"
   },
   {
     "EventCode": "0x17080",
@@ -3018,40 +2826,10 @@
     "PublicDescription": "All successful D-side store dispatches for this thread,"
   },
   {
-    "EventCode": "0x44708c",
-    "EventName": "PM_L2_ST_DISP",
-    "BriefDescription": "All successful store dispatches,",
-    "PublicDescription": "All successful store dispatches,"
-  },
-  {
-    "EventCode": "0x44708e",
-    "EventName": "PM_L2_ST_HIT",
-    "BriefDescription": "All successful store dispatches that were L2Hits,",
-    "PublicDescription": "All successful store dispatches that were L2Hits,"
-  },
-  {
     "EventCode": "0x17082",
     "EventName": "PM_L2_ST_MISS",
     "BriefDescription": "All successful D-side store dispatches for this thread that were L2 Miss,",
     "PublicDescription": "All successful D-side store dispatches for this thread that were L2 Miss,"
-  },
-  {
-    "EventCode": "0x636088",
-    "EventName": "PM_L2_SYS_GUESS_CORRECT",
-    "BriefDescription": "L2 guess sys and guess was correct (ie data beyond-6chip),",
-    "PublicDescription": "L2 guess sys and guess was correct (ie data beyond-6chip),"
-  },
-  {
-    "EventCode": "0x63608a",
-    "EventName": "PM_L2_SYS_GUESS_WRONG",
-    "BriefDescription": "L2 guess sys and guess was not correct (ie data ^beyond-6chip),",
-    "PublicDescription": "L2 guess sys and guess was not correct (ie data ^beyond-6chip),"
-  },
-  {
-    "EventCode": "0x617080",
-    "EventName": "PM_L2_SYS_PUMP",
-    "BriefDescription": "RC requests that were system pump attempts,",
-    "PublicDescription": "RC requests that were system pump attempts,"
   },
   {
     "EventCode": "0x1e05e",
@@ -3066,34 +2844,10 @@
     "PublicDescription": "TM marked store abort.,"
   },
   {
-    "EventCode": "0x23808a",
-    "EventName": "PM_L3_CINJ",
-    "BriefDescription": "l3 ci of cache inject,",
-    "PublicDescription": "l3 ci of cache inject,"
-  },
-  {
-    "EventCode": "0x128084",
-    "EventName": "PM_L3_CI_HIT",
-    "BriefDescription": "L3 Castins Hit (total count,",
-    "PublicDescription": "L3 Castins Hit (total count,"
-  },
-  {
-    "EventCode": "0x128086",
-    "EventName": "PM_L3_CI_MISS",
-    "BriefDescription": "L3 castins miss (total count,",
-    "PublicDescription": "L3 castins miss (total count,"
-  },
-  {
     "EventCode": "0x819082",
     "EventName": "PM_L3_CI_USAGE",
     "BriefDescription": "rotating sample of 16 CI or CO actives,",
     "PublicDescription": "rotating sample of 16 CI or CO actives,"
-  },
-  {
-    "EventCode": "0x438088",
-    "EventName": "PM_L3_CO",
-    "BriefDescription": "l3 castout occuring ( does not include casthrough or log writes (cinj/dmaw),",
-    "PublicDescription": "l3 castout occuring ( does not include casthrough or log writes (cinj/dmaw),"
   },
   {
     "EventCode": "0x83908b",
@@ -3114,12 +2868,6 @@
     "PublicDescription": "L3 CO to L3.1 OR of port 0 and 1 ( lossy),"
   },
   {
-    "EventCode": "0x238088",
-    "EventName": "PM_L3_CO_LCO",
-    "BriefDescription": "Total L3 castouts occurred on LCO,",
-    "PublicDescription": "Total L3 castouts occurred on LCO,"
-  },
-  {
     "EventCode": "0x28084",
     "EventName": "PM_L3_CO_MEM",
     "BriefDescription": "L3 CO to memory OR of port 0 and 1 ( lossy),",
@@ -3132,244 +2880,10 @@
     "PublicDescription": "L3 CO of line in Mep state ( includes casthrough,"
   },
   {
-    "EventCode": "0xb19082",
-    "EventName": "PM_L3_GRP_GUESS_CORRECT",
-    "BriefDescription": "Initial scope=group and data from same group (near) (pred successful),",
-    "PublicDescription": "Initial scope=group and data from same group (near) (pred successful),"
-  },
-  {
-    "EventCode": "0xb3908a",
-    "EventName": "PM_L3_GRP_GUESS_WRONG_HIGH",
-    "BriefDescription": "Initial scope=group but data from local node. Predition too high,",
-    "PublicDescription": "Initial scope=group but data from local node. Predition too high,"
-  },
-  {
-    "EventCode": "0xb39088",
-    "EventName": "PM_L3_GRP_GUESS_WRONG_LOW",
-    "BriefDescription": "Initial scope=group but data from outside group (far or rem). Prediction too Low,",
-    "PublicDescription": "Initial scope=group but data from outside group (far or rem). Prediction too Low,"
-  },
-  {
-    "EventCode": "0x218080",
-    "EventName": "PM_L3_HIT",
-    "BriefDescription": "L3 Hits,",
-    "PublicDescription": "L3 Hits,"
-  },
-  {
-    "EventCode": "0x138088",
-    "EventName": "PM_L3_L2_CO_HIT",
-    "BriefDescription": "L2 castout hits,",
-    "PublicDescription": "L2 castout hits,"
-  },
-  {
-    "EventCode": "0x13808a",
-    "EventName": "PM_L3_L2_CO_MISS",
-    "BriefDescription": "L2 castout miss,",
-    "PublicDescription": "L2 castout miss,"
-  },
-  {
-    "EventCode": "0x14808c",
-    "EventName": "PM_L3_LAT_CI_HIT",
-    "BriefDescription": "L3 Lateral Castins Hit,",
-    "PublicDescription": "L3 Lateral Castins Hit,"
-  },
-  {
-    "EventCode": "0x14808e",
-    "EventName": "PM_L3_LAT_CI_MISS",
-    "BriefDescription": "L3 Lateral Castins Miss,",
-    "PublicDescription": "L3 Lateral Castins Miss,"
-  },
-  {
-    "EventCode": "0x228084",
-    "EventName": "PM_L3_LD_HIT",
-    "BriefDescription": "L3 demand LD Hits,",
-    "PublicDescription": "L3 demand LD Hits,"
-  },
-  {
-    "EventCode": "0x228086",
-    "EventName": "PM_L3_LD_MISS",
-    "BriefDescription": "L3 demand LD Miss,",
-    "PublicDescription": "L3 demand LD Miss,"
-  },
-  {
     "EventCode": "0x1e052",
     "EventName": "PM_L3_LD_PREF",
     "BriefDescription": "L3 Load Prefetches,",
     "PublicDescription": "L3 Load Prefetches.,"
-  },
-  {
-    "EventCode": "0xb19080",
-    "EventName": "PM_L3_LOC_GUESS_CORRECT",
-    "BriefDescription": "initial scope=node/chip and data from local node (local) (pred successful),",
-    "PublicDescription": "initial scope=node/chip and data from local node (local) (pred successful),"
-  },
-  {
-    "EventCode": "0xb29086",
-    "EventName": "PM_L3_LOC_GUESS_WRONG",
-    "BriefDescription": "Initial scope=node but data from out side local node (near or far or rem). Prediction too Low,",
-    "PublicDescription": "Initial scope=node but data from out side local node (near or far or rem). Prediction too Low,"
-  },
-  {
-    "EventCode": "0x218082",
-    "EventName": "PM_L3_MISS",
-    "BriefDescription": "L3 Misses,",
-    "PublicDescription": "L3 Misses,"
-  },
-  {
-    "EventCode": "0x54808c",
-    "EventName": "PM_L3_P0_CO_L31",
-    "BriefDescription": "l3 CO to L3.1 (lco) port 0,",
-    "PublicDescription": "l3 CO to L3.1 (lco) port 0,"
-  },
-  {
-    "EventCode": "0x538088",
-    "EventName": "PM_L3_P0_CO_MEM",
-    "BriefDescription": "l3 CO to memory port 0,",
-    "PublicDescription": "l3 CO to memory port 0,"
-  },
-  {
-    "EventCode": "0x929084",
-    "EventName": "PM_L3_P0_CO_RTY",
-    "BriefDescription": "L3 CO received retry port 0,",
-    "PublicDescription": "L3 CO received retry port 0,"
-  },
-  {
-    "EventCode": "0xa29084",
-    "EventName": "PM_L3_P0_GRP_PUMP",
-    "BriefDescription": "L3 pf sent with grp scope port 0,",
-    "PublicDescription": "L3 pf sent with grp scope port 0,"
-  },
-  {
-    "EventCode": "0x528084",
-    "EventName": "PM_L3_P0_LCO_DATA",
-    "BriefDescription": "lco sent with data port 0,",
-    "PublicDescription": "lco sent with data port 0,"
-  },
-  {
-    "EventCode": "0x518080",
-    "EventName": "PM_L3_P0_LCO_NO_DATA",
-    "BriefDescription": "dataless l3 lco sent port 0,",
-    "PublicDescription": "dataless l3 lco sent port 0,"
-  },
-  {
-    "EventCode": "0xa4908c",
-    "EventName": "PM_L3_P0_LCO_RTY",
-    "BriefDescription": "L3 LCO received retry port 0,",
-    "PublicDescription": "L3 LCO received retry port 0,"
-  },
-  {
-    "EventCode": "0xa19080",
-    "EventName": "PM_L3_P0_NODE_PUMP",
-    "BriefDescription": "L3 pf sent with nodal scope port 0,",
-    "PublicDescription": "L3 pf sent with nodal scope port 0,"
-  },
-  {
-    "EventCode": "0x919080",
-    "EventName": "PM_L3_P0_PF_RTY",
-    "BriefDescription": "L3 PF received retry port 0,",
-    "PublicDescription": "L3 PF received retry port 0,"
-  },
-  {
-    "EventCode": "0x939088",
-    "EventName": "PM_L3_P0_SN_HIT",
-    "BriefDescription": "L3 snoop hit port 0,",
-    "PublicDescription": "L3 snoop hit port 0,"
-  },
-  {
-    "EventCode": "0x118080",
-    "EventName": "PM_L3_P0_SN_INV",
-    "BriefDescription": "Port0 snooper detects someone doing a store to a line thats Sx,",
-    "PublicDescription": "Port0 snooper detects someone doing a store to a line thats Sx,"
-  },
-  {
-    "EventCode": "0x94908c",
-    "EventName": "PM_L3_P0_SN_MISS",
-    "BriefDescription": "L3 snoop miss port 0,",
-    "PublicDescription": "L3 snoop miss port 0,"
-  },
-  {
-    "EventCode": "0xa39088",
-    "EventName": "PM_L3_P0_SYS_PUMP",
-    "BriefDescription": "L3 pf sent with sys scope port 0,",
-    "PublicDescription": "L3 pf sent with sys scope port 0,"
-  },
-  {
-    "EventCode": "0x54808e",
-    "EventName": "PM_L3_P1_CO_L31",
-    "BriefDescription": "l3 CO to L3.1 (lco) port 1,",
-    "PublicDescription": "l3 CO to L3.1 (lco) port 1,"
-  },
-  {
-    "EventCode": "0x53808a",
-    "EventName": "PM_L3_P1_CO_MEM",
-    "BriefDescription": "l3 CO to memory port 1,",
-    "PublicDescription": "l3 CO to memory port 1,"
-  },
-  {
-    "EventCode": "0x929086",
-    "EventName": "PM_L3_P1_CO_RTY",
-    "BriefDescription": "L3 CO received retry port 1,",
-    "PublicDescription": "L3 CO received retry port 1,"
-  },
-  {
-    "EventCode": "0xa29086",
-    "EventName": "PM_L3_P1_GRP_PUMP",
-    "BriefDescription": "L3 pf sent with grp scope port 1,",
-    "PublicDescription": "L3 pf sent with grp scope port 1,"
-  },
-  {
-    "EventCode": "0x528086",
-    "EventName": "PM_L3_P1_LCO_DATA",
-    "BriefDescription": "lco sent with data port 1,",
-    "PublicDescription": "lco sent with data port 1,"
-  },
-  {
-    "EventCode": "0x518082",
-    "EventName": "PM_L3_P1_LCO_NO_DATA",
-    "BriefDescription": "dataless l3 lco sent port 1,",
-    "PublicDescription": "dataless l3 lco sent port 1,"
-  },
-  {
-    "EventCode": "0xa4908e",
-    "EventName": "PM_L3_P1_LCO_RTY",
-    "BriefDescription": "L3 LCO received retry port 1,",
-    "PublicDescription": "L3 LCO received retry port 1,"
-  },
-  {
-    "EventCode": "0xa19082",
-    "EventName": "PM_L3_P1_NODE_PUMP",
-    "BriefDescription": "L3 pf sent with nodal scope port 1,",
-    "PublicDescription": "L3 pf sent with nodal scope port 1,"
-  },
-  {
-    "EventCode": "0x919082",
-    "EventName": "PM_L3_P1_PF_RTY",
-    "BriefDescription": "L3 PF received retry port 1,",
-    "PublicDescription": "L3 PF received retry port 1,"
-  },
-  {
-    "EventCode": "0x93908a",
-    "EventName": "PM_L3_P1_SN_HIT",
-    "BriefDescription": "L3 snoop hit port 1,",
-    "PublicDescription": "L3 snoop hit port 1,"
-  },
-  {
-    "EventCode": "0x118082",
-    "EventName": "PM_L3_P1_SN_INV",
-    "BriefDescription": "Port1 snooper detects someone doing a store to a line thats Sx,",
-    "PublicDescription": "Port1 snooper detects someone doing a store to a line thats Sx,"
-  },
-  {
-    "EventCode": "0x94908e",
-    "EventName": "PM_L3_P1_SN_MISS",
-    "BriefDescription": "L3 snoop miss port 1,",
-    "PublicDescription": "L3 snoop miss port 1,"
-  },
-  {
-    "EventCode": "0xa3908a",
-    "EventName": "PM_L3_P1_SYS_PUMP",
-    "BriefDescription": "L3 pf sent with sys scope port 1,",
-    "PublicDescription": "L3 pf sent with sys scope port 1,"
   },
   {
     "EventCode": "0x84908d",
@@ -3382,12 +2896,6 @@
     "EventName": "PM_L3_PF0_BUSY",
     "BriefDescription": "lifetime, sample of PF machine 0 valid,",
     "PublicDescription": "lifetime, sample of PF machine 0 valid,"
-  },
-  {
-    "EventCode": "0x428084",
-    "EventName": "PM_L3_PF_HIT_L3",
-    "BriefDescription": "l3 pf hit in l3,",
-    "PublicDescription": "l3 pf hit in l3,"
   },
   {
     "EventCode": "0x18080",
@@ -3480,40 +2988,10 @@
     "PublicDescription": "Data stream touchto L3.,"
   },
   {
-    "EventCode": "0xb29084",
-    "EventName": "PM_L3_SYS_GUESS_CORRECT",
-    "BriefDescription": "Initial scope=system and data from outside group (far or rem)(pred successful),",
-    "PublicDescription": "Initial scope=system and data from outside group (far or rem)(pred successful),"
-  },
-  {
-    "EventCode": "0xb4908c",
-    "EventName": "PM_L3_SYS_GUESS_WRONG",
-    "BriefDescription": "Initial scope=system but data from local or near. Predction too high,",
-    "PublicDescription": "Initial scope=system but data from local or near. Predction too high,"
-  },
-  {
-    "EventCode": "0x24808e",
-    "EventName": "PM_L3_TRANS_PF",
-    "BriefDescription": "L3 Transient prefetch,",
-    "PublicDescription": "L3 Transient prefetch,"
-  },
-  {
     "EventCode": "0x18081",
     "EventName": "PM_L3_WI0_ALLOC",
     "BriefDescription": "lifetime, sample of Write Inject machine 0 valid,",
     "PublicDescription": "0.0,"
-  },
-  {
-    "EventCode": "0x418080",
-    "EventName": "PM_L3_WI0_BUSY",
-    "BriefDescription": "lifetime, sample of Write Inject machine 0 valid,",
-    "PublicDescription": "lifetime, sample of Write Inject machine 0 valid,"
-  },
-  {
-    "EventCode": "0x418082",
-    "EventName": "PM_L3_WI_USAGE",
-    "BriefDescription": "rotating sample of 8 WI actives,",
-    "PublicDescription": "rotating sample of 8 WI actives,"
   },
   {
     "EventCode": "0x3c058",
@@ -5292,12 +4770,6 @@
     "PublicDescription": "Dispatch time non favored tbegin,"
   },
   {
-    "EventCode": "0x328084",
-    "EventName": "PM_NON_TM_RST_SC",
-    "BriefDescription": "non tm snp rst tm sc,",
-    "PublicDescription": "non tm snp rst tm sc,"
-  },
-  {
     "EventCode": "0x2001a",
     "EventName": "PM_NTCG_ALL_FIN",
     "BriefDescription": "Cycles after all instructions have finished to group completed,",
@@ -5478,24 +4950,6 @@
     "PublicDescription": "Continuous 16 cycle(2to1) window where this signals rotates thru sampling each L2 RC machine busy. PMU uses this wave to then do 16 cyc count to sample total number of machs running,"
   },
   {
-    "EventCode": "0x34808e",
-    "EventName": "PM_RD_CLEARING_SC",
-    "BriefDescription": "rd clearing sc,",
-    "PublicDescription": "rd clearing sc,"
-  },
-  {
-    "EventCode": "0x34808c",
-    "EventName": "PM_RD_FORMING_SC",
-    "BriefDescription": "rd forming sc,",
-    "PublicDescription": "rd forming sc,"
-  },
-  {
-    "EventCode": "0x428086",
-    "EventName": "PM_RD_HIT_PF",
-    "BriefDescription": "rd machine hit l3 pf machine,",
-    "PublicDescription": "rd machine hit l3 pf machine,"
-  },
-  {
     "EventCode": "0x20004",
     "EventName": "PM_REAL_SRQ_FULL",
     "BriefDescription": "Out of real srq entries,",
@@ -5604,18 +5058,6 @@
     "PublicDescription": "TLBIE snoopSnoop TLBIE,"
   },
   {
-    "EventCode": "0x338088",
-    "EventName": "PM_SNP_TM_HIT_M",
-    "BriefDescription": "snp tm st hit m mu,",
-    "PublicDescription": "snp tm st hit m mu,"
-  },
-  {
-    "EventCode": "0x33808a",
-    "EventName": "PM_SNP_TM_HIT_T",
-    "BriefDescription": "snp tm_st_hit t tn te,",
-    "PublicDescription": "snp tm_st_hit t tn te,"
-  },
-  {
     "EventCode": "0x4608c",
     "EventName": "PM_SN_USAGE",
     "BriefDescription": "Continuous 16 cycle(2to1) window where this signals rotates thru sampling each L2 SN machine busy. PMU uses this wave to then do 16 cyc count to sample total number of machs running,",
@@ -5638,12 +5080,6 @@
     "EventName": "PM_STCX_LSU",
     "BriefDescription": "STCX executed reported at sent to nest,",
     "PublicDescription": "STCX executed reported at sent to nest42,"
-  },
-  {
-    "EventCode": "0x717080",
-    "EventName": "PM_ST_CAUSED_FAIL",
-    "BriefDescription": "Non TM St caused any thread to fail,",
-    "PublicDescription": "Non TM St caused any thread to fail,"
   },
   {
     "EventCode": "0x20016",
@@ -5916,18 +5352,6 @@
     "PublicDescription": "Tm any tbegin,"
   },
   {
-    "EventCode": "0x318082",
-    "EventName": "PM_TM_CAM_OVERFLOW",
-    "BriefDescription": "l3 tm cam overflow during L2 co of SC,",
-    "PublicDescription": "l3 tm cam overflow during L2 co of SC,"
-  },
-  {
-    "EventCode": "0x74708c",
-    "EventName": "PM_TM_CAP_OVERFLOW",
-    "BriefDescription": "TM Footprint Capactiy Overflow,",
-    "PublicDescription": "TM Footprint Capactiy Overflow,"
-  },
-  {
     "EventCode": "0x20ba",
     "EventName": "PM_TM_END_ALL",
     "BriefDescription": "Tm any tend,",
@@ -5980,48 +5404,6 @@
     "EventName": "PM_TM_FAIL_TX_CONFLICT",
     "BriefDescription": "Transactional conflict from LSU, whatever gets reported to texas,",
     "PublicDescription": "Transactional conflict from LSU, whatever gets reported to texas 42,"
-  },
-  {
-    "EventCode": "0x727086",
-    "EventName": "PM_TM_FAV_CAUSED_FAIL",
-    "BriefDescription": "TM Load (fav) caused another thread to fail,",
-    "PublicDescription": "TM Load (fav) caused another thread to fail,"
-  },
-  {
-    "EventCode": "0x717082",
-    "EventName": "PM_TM_LD_CAUSED_FAIL",
-    "BriefDescription": "Non TM Ld caused any thread to fail,",
-    "PublicDescription": "Non TM Ld caused any thread to fail,"
-  },
-  {
-    "EventCode": "0x727084",
-    "EventName": "PM_TM_LD_CONF",
-    "BriefDescription": "TM Load (fav or non-fav) ran into conflict (failed),",
-    "PublicDescription": "TM Load (fav or non-fav) ran into conflict (failed),"
-  },
-  {
-    "EventCode": "0x328086",
-    "EventName": "PM_TM_RST_SC",
-    "BriefDescription": "tm snp rst tm sc,",
-    "PublicDescription": "tm snp rst tm sc,"
-  },
-  {
-    "EventCode": "0x318080",
-    "EventName": "PM_TM_SC_CO",
-    "BriefDescription": "l3 castout tm Sc line,",
-    "PublicDescription": "l3 castout tm Sc line,"
-  },
-  {
-    "EventCode": "0x73708a",
-    "EventName": "PM_TM_ST_CAUSED_FAIL",
-    "BriefDescription": "TM Store (fav or non-fav) caused another thread to fail,",
-    "PublicDescription": "TM Store (fav or non-fav) caused another thread to fail,"
-  },
-  {
-    "EventCode": "0x737088",
-    "EventName": "PM_TM_ST_CONF",
-    "BriefDescription": "TM Store (fav or non-fav) ran into conflict (failed),",
-    "PublicDescription": "TM Store (fav or non-fav) ran into conflict (failed),"
   },
   {
     "EventCode": "0x20bc",
