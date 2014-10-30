@@ -63,7 +63,7 @@
     "EventCode": "0x640052",
     "EventName": "PM_ALL_PUMP_MPRED",
     "BriefDescription": "Pump misprediction. Counts across all types of pumps for all data types (demand load,data prefetch,inst prefetch,inst fetch,xlate),",
-    "PublicDescription": "Pump Mis prediction Counts across all types of pumpsfor all data types excluding data prefetch (demand load,inst prefetch,inst fetch,xlate),"
+    "PublicDescription": "Pump misprediction. Counts across all types of pumpsfor all data types excluding data prefetch (demand load,inst prefetch,inst fetch,xlate),"
   },
   {
     "EventCode": "0x630050",
@@ -105,7 +105,7 @@
     "EventCode": "0x10068",
     "EventName": "PM_BRU_FIN",
     "BriefDescription": "Branch Instruction Finished,",
-    "PublicDescription": "Branch Instruction Finished .,"
+    "PublicDescription": "Branch Instruction Finished.,"
   },
   {
     "EventCode": "0x20036",
